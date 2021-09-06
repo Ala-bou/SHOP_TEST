@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02BBF7</color>
+    <color name="colorPrimary_claire">#67CEF7</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="gray">#dddddd</color>
+    <color name="gold">#FFD700</color>
+    <color name="gris3">#F5F5F5</color>
+
+    <color name="white">#fff</color>
+    <color name="blan">#fff</color>
+    <color name="gris">#707070</color>
+    <color name="vert2">#27ae60</color>
+    <color name="vert_dark">#1B6C3D</color>
+    <color name="gris22">#C5C5C5</color>
+    <color name="gris222">#F6F6F6</color>
+    <color name="gris6">#525252</color>
+    <color name="gris2">#f0edf4</color>
+    <color name="rouge">#FF0000</color>
+    <color name="rouge_dark">#831909</color>
+    <color name="jaune">#FFCD3A</color>
+    <color name="jaune_dark">#FF9900</color>
+    <color name="Orange">#FF9900</color>
+    <color name="bleu">#72d3fe</color>
+    <color name="bleu_dark">#0464BA</color>
+    <color name="gris33">#f9f9f9</color>
+    <color name="gris5">#a9a9a9</color>
+    <color name="gris67">#DACAC9C9</color>
+    <color name="black">#000</color>
+    <color name="orange">#FF5722</color>
+
+    <color name="event_color_01">#DA59DBE0</color>
+    <color name="event_color_02">#DAf57f68</color>
+    <color name="event_color_03">#DA87d288</color>
+    <color name="event_color_04">#DAf8b552</color>
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#2789e4</color>
+    <color name="back_parametre">#5B75A0</color>
+
+
+    <color name="themeOrange">#ffb259</color>
+    <color name="themeRed">#ff5959</color>
+    <color name="themeGreen">#4cd97b</color>
+    <color name="themeBlue">#4cb5ff</color>
+    <color name="themePurple">#9059ff</color>
+
+
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="blue_1">#00101f</color>
+    <color name="blue_5">#0078ff</color>
+
+</resources>

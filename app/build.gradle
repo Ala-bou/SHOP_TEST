@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: "com.android.application"
+apply plugin: "com.google.gms.google-services"
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.1"
+    defaultConfig {
+        applicationId "com.smi.test"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation "com.bugsnag:bugsnag-android:5.8.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.yarolegovich:sliding-root-nav:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation platform('com.google.firebase:firebase-bom:28.4.0')
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.1'
+    implementation 'com.github.NaimishTrivedi:FBToast:1.0'
+
+
+
+
+
+
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'gr.escsoft.michaelprimez.searchablespinner:SearchableSpinner:1.0.9'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    implementation 'gr.escsoft.michaelprimez.revealedittext:RevealEditText:1.0.2'
+    implementation 'com.ibuildapp:TwoWayGridView:1.0.0'
+    implementation 'com.github.StevenDXC:DxLoadingButton:2.4'
+    implementation 'com.github.nirhart:ParallaxScroll:dd53d1f9d1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.samlss:ClockView:1.0'
+
+
+}
