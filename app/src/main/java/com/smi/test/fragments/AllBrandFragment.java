@@ -15,9 +15,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.smi.test.MainActivity;
 import com.smi.test.R;
-import com.smi.test.SliderItem;
 import com.smi.test.adapter.ListDocumentAdapter;
 import com.smi.test.entity.Brands;
 

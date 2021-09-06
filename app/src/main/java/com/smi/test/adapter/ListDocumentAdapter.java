@@ -4,13 +4,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -19,16 +17,14 @@ import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.smi.test.R;
-import com.smi.test.SecondeActivity;
+import com.smi.test.detail_brand.SecondeActivity;
 import com.smi.test.entity.Brands;
 
-import java.text.DecimalFormat;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-import static android.view.View.GONE;
 import static com.smi.test.MainActivity.brands_choisen;
 
 

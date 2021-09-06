@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-android:background="@color/colorAccent"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -20,8 +19,8 @@ android:background="@color/colorAccent"
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="100sp"
-                android:layout_height="100sp"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
                 app:srcCompat="@drawable/logo" />
 
 
@@ -43,7 +42,7 @@ android:background="@color/colorAccent"
                 android:layout_marginLeft="15dp"
                 android:fontFamily="@font/light"
                 android:gravity="center"
-                android:text="Merci de vous authentifier."
+                android:text="Merci de vous inscrire ."
                 android:textColor="#A5A8B3"
                 android:textSize="19sp" />
 
@@ -88,7 +87,7 @@ android:background="@color/colorAccent"
                 android:layout_marginTop="35dp"
                 app:lb_btnDisabledColor="@color/colorPrimary"
                 app:lb_btnRippleColor="@color/colorPrimary"
-                app:lb_btnText="valider"
+                app:lb_btnText="Inscription"
 
                 app:lb_disabledTextColor="@color/colorPrimary"
                 app:lb_resetAfterFailed="true"
@@ -122,12 +121,12 @@ android:background="@color/colorAccent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginBottom="10dp"
-        android:fontFamily="@font/light"
+        android:fontFamily="@font/bold"
         android:gravity="center"
         android:id="@+id/createText"
-        android:text="Inscription ?"
+        android:text="Vous avez déja un compte ?"
         android:textColor="#A5A8B3"
         android:textSize="14sp" />
 

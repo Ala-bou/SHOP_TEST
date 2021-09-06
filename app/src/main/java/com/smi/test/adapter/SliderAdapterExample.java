@@ -1,4 +1,4 @@
-package com.smi.test;
+package com.smi.test.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,9 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.smarteist.autoimageslider.SliderViewAdapter;
+import com.smi.test.R;
+import com.smi.test.detail_brand.SecondeActivity;
+import com.smi.test.entity.SliderItem;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -5,27 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
-import android.animation.Animator;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.LinearGradient;
-import android.graphics.Shader;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewAnimationUtils;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.dx.dxloadingbutton.lib.LoadingButton;
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
@@ -38,11 +28,12 @@ import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnima
 import com.smarteist.autoimageslider.IndicatorView.draw.controller.DrawController;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
-import com.smi.test.adapter.ListDocumentAdapter;
 import com.smi.test.adapter.PageAdapter;
+import com.smi.test.adapter.SliderAdapterExample;
 import com.smi.test.authentifIcation.LoginActivity;
+import com.smi.test.detail_brand.SecondeActivity;
 import com.smi.test.entity.Brands;
-import com.tfb.fbtoast.FBToast;
+import com.smi.test.entity.SliderItem;
 import com.yarolegovich.slidingrootnav.SlidingRootNav;
 import com.yarolegovich.slidingrootnav.SlidingRootNavBuilder;
 
@@ -51,6 +42,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -70,6 +62,8 @@ public static Brands brands_choisen=new Brands();
     SliderView sliderView;
     private SliderAdapterExample adapter;
 
+    @BindView(R.id.shimmer)
+    ShimmerFrameLayout Shimmer;
 
     @BindView(R.id.tablayout)
     TabLayout tabLayout;
@@ -79,19 +73,22 @@ public static Brands brands_choisen=new Brands();
 
     PageAdapter pageAdapter;
 
-    @BindView(R.id.tab_all)
-    TabItem tab_all;
 
-    @BindView(R.id.tab_premium)
-    TabItem tab_premium;
+
+    @BindView(R.id.lin_top)
+    LinearLayout lin_top;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
+        Shimmer.setVisibility(View.VISIBLE);
+        lin_top.setVisibility(View.GONE);
 
+        Shimmer.startShimmer();
         tabLayout = findViewById(R.id.tablayout);
 
         viewPager = findViewById(R.id.viewPager);
@@ -324,7 +321,10 @@ public static Brands brands_choisen=new Brands();
                     }
                 }
 
+                Shimmer.setVisibility(View.GONE);
+                lin_top.setVisibility(View.VISIBLE);
 
+                Shimmer.stopShimmer();
             }
 
             @Override

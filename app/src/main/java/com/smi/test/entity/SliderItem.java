@@ -1,4 +1,4 @@
-package com.smi.test;
+package com.smi.test.entity;
 
 public class SliderItem {
 

@@ -20,8 +20,8 @@
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="100sp"
-                android:layout_height="100sp"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
                 app:srcCompat="@drawable/logo" />
 
 
@@ -123,11 +123,12 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="15dp"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/light"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/bold"
         android:gravity="center"
         android:id="@+id/createText"
-        android:text="Inscription ?"
+        android:text="Créer un nouveu compte"
+
         android:textColor="#A5A8B3"
         android:textSize="14sp" />
 
