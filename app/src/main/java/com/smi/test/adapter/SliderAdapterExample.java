@@ -72,7 +72,6 @@ public class SliderAdapterExample extends
 
                 brands_choisen=brandsList_new.get(position);
                 context.startActivity(new Intent(context, SecondeActivity.class));
-                Toast.makeText(context, "This is item in position " + position, Toast.LENGTH_SHORT).show();
             }
         });
     }

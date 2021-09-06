@@ -233,8 +233,8 @@ public class RegistreActivity extends AppCompatActivity {
                                         public void run() {
                                             // yourMethod();
 
-                                          //  FBToast.errorToast(RegistreActivity.this, "Probleme d'inscription", FBToast.LENGTH_SHORT);
-                                            Toast.makeText(RegistreActivity.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                            FBToast.errorToast(RegistreActivity.this, "Probleme d'inscription", FBToast.LENGTH_SHORT);
+                                           // Toast.makeText(RegistreActivity.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                                             clickcount = 0;
                                             //    password.setError("Mot de passe obligatoire");
